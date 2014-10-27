@@ -47,7 +47,7 @@ function normalizePath(basePath, relativePath) {
 
     var normalizedPath = baseComponents.join("/");
 
-    if (normalizedPath.substr(normalizedPath.length - 3) !== ".js") {
+    if (normalizedPath.substr(normalizedPath.length - 3) !== ".js" && normalizedPath.substr(normalizedPath.length - 3) !== "jsx") {
         normalizedPath += ".js";
     }
 
